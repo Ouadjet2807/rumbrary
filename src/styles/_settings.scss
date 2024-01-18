@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&family=Quattrocento&display&family=Salsa&display=swap');
+
+@font-face {
+    font-family: 'Tusker Regular';
+    src: url(../../public/fonts/Tusker/TuskerGrotesk-3500Medium.ttf)
+        ;
+}
+@font-face {
+    font-family: 'Tusker light';
+    src: url(../../public/fonts/Tusker/TuskerGrotesk-1500Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Migra Extra light';
+    src: url(../../public/fonts/Migra/Migra-Extralight.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$font1: 'Tusker Regular';
+$font2: 'Tusker light';
+$font3: 'Migra Extra light';
+$font4: 'Lato';
+$font5: 'Quattrocento';
+$font6: 'Salsa';
+
+$background: linear-gradient(225deg, rgba(255,233,165,1) 0%, rgba(249,182,87,1) 31%, rgba(249,196,196,1) 70%);;
+$white: #f8f8f8;
+
+body {
+    background: $background;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    overflow: hidden;
+}
+
+
+h1 {
+    font-family: $font1;
+    color: $white;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+p {
+    font-family: $font4;
+}
+
+button {
+    background-color: transparent;
+    width: 150px;
+    font-family: $font1;
+    color: $white;
+    border: 3px solid $white;
+    border-radius: 25px;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: 0.3s ease-in;
+    backdrop-filter: blur(25px);
+
+    &:hover {
+        background: #ffc77f;
+        color: #222;
+        border: 3px solid #222;
+    }
+ }

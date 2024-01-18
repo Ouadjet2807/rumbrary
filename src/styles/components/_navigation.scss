@@ -1,0 +1,42 @@
+nav {
+    margin: 0 auto;
+    width: max-content;
+    padding: 20px;
+
+    
+    ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+
+    li {
+        padding: 0 10px;
+        font-family: $font5;
+        letter-spacing: 3px;
+        font-weight: 600;
+        text-transform: lowercase;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+      
+
+        a {
+            text-decoration: none;
+            color: $white;
+        }
+    }
+ }
+}
+
+.cursor {
+
+    img {
+        width: 30px;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+    }
+}
